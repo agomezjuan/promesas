@@ -100,6 +100,7 @@ function renderizarDatosUsuario(datos) {
   const foto = document.createElement("img");
   foto.setAttribute("src", datos.results[0].picture.large);
 
+  // crear campo de nombre
   const nombre = document.createElement("p");
   let title = capitalize(datos.results[0].name.title) + ".";
   let first = capitalize(datos.results[0].name.first);
@@ -107,15 +108,18 @@ function renderizarDatosUsuario(datos) {
 
   nombre.innerText = `${title} ${first} ${last}`;
 
+  //crear campo de correo
   const email = document.createElement("p");
   email.classList.add("email");
   email.innerText = datos.results[0].email;
 
+  // insertar foto, nombre y email en la tarjeta
   tarjeta.appendChild(foto);
   tarjeta.appendChild(nombre);
   tarjeta.appendChild(email);
 }
 
+// primera letra mayuscula
 function capitalize(str) {
   return str[0].toUpperCase() + str.slice(1);
 }
