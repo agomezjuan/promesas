@@ -14,8 +14,12 @@
 }
 
 body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 background: linear-gradient(110deg, var(--primary), var(--secondary));
 height: 100vh;
+
 }
 
 h1{
