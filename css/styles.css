@@ -27,7 +27,29 @@ h1{
   background-color: white;
   border-radius: 20px;
   margin: 0 auto;
-  height: 200px;
+  height: 300px;
   width: 50%;
   max-width: 400px;
+  padding-top: 20px;
+}
+
+img {
+  display: block;
+  margin: 30px auto;
+  width: 128px;
+  height: 128px;
+  object-fit: cover;
+  border-radius: 128px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.tarjeta p {
+  text-align: center;
+  font-size: large;
+}
+
+.tarjeta .email {
+  text-align: center;
+  font-size: medium;
+  color: gray;
 }
